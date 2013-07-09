@@ -1,0 +1,14 @@
+An in-game editor to alter the map and many other things on the fly.
+
+Features:
+- Edit or paint terrain, features, natural wonders, resources, improvements, rivers, fog, etc.
+- Spawn new units, remove other ones, for any civilization, including barbarians.
+- Change cities' population, buildings, culture, status, etc.
+- Modify players' gold, culture, relations, etc. End wars or seed them, grant victory or inflict shame, etc.
+- And more!
+
+Notes:
+- If you encounter bugs, delete older versions and empty your cache folder (My Documents/My Games/Civ5/cache).
+
+Compatibility:
+- Should be fully compatible with any mod and language.

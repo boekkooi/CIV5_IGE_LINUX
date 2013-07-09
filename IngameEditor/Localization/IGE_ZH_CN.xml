@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Released under GPLv3 -->
+<GameData>
+	<Language_zh_CN>
+		<!--Panels -->
+		<Row Tag="TXT_KEY_IGE_EDIT">
+			<Text>编辑</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PAINT">
+			<Text>笔刷</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CHANGE">
+			<Text>更改</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PLAYER">
+			<Text>当前势力</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TERRAIN_EDIT_PANEL">
+			<Text>地形（F1）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TERRAIN_EDIT_PANEL_HELP">
+			<Text>[ICON_BULLET]左键选中地块。[NEWLINE][ICON_BULLET]右键取消选择。[NEWLINE][ICON_BULLET]Ctrl键+Z键/Y键撤销/重复更改。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CITIES_AND_UNITS_PANEL">
+			<Text>城市和单位（F2）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CITIES_AND_UNITS_PANEL_HELP">
+			<Text>[ICON_BULLET]左键选中地块。[NEWLINE][ICON_BULLET]右键取消选中。[NEWLINE][ICON_BULLET]Shift键+左键新设城市。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TERRAIN_PAINT_PANEL">
+			<Text>地形（F3）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TERRAIN_PAINT_PANEL_HELP">
+			<Text>[ICON_BULLET]右键并拖动鼠标来改变地块。[NEWLINE][ICON_BULLET]Shift键+右键来一次改变7格地块。[NEWLINE][ICON_BULLET]Ctrl键+Z键/Y键撤销/重复更改。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_UNITS_PANEL">
+			<Text>单位（F4）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_UNITS_PANEL_HELP">
+			<Text>[ICON_BULLET]右键产生一个单位。[NEWLINE][ICON_BULLET]Shift键+右键移除最近产生的单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TECHS_PANEL">
+			<Text>科技（F7）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TECHS_PANEL_HELP">
+			<Text>[ICON_BULLET]点击以添加或移除指定科技。[NEWLINE][ICON_BULLET]Shift键+鼠标点击来添加或移除一个科技和其所有前置科技。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PLAYERS_PANEL">
+			<Text>当前文明势力（F6）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SOCIAL_POLICIES_PANEL">
+			<Text>政策（F8）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ACTIVE_PLAYER_BUTTON_HELP">
+			<Text>点击以更改当前控制势力。[NEWLINE]这个选项将影响文明势力相关内容（迷雾、势力范围等）。[NEWLINE][COLOR_NEGATIVE_TEXT]如果你在选择其他势力时出现了游戏崩溃的情况，请在“IGE编辑器”处右键勾选安全模式。[ENDCOLOR]</Text>
+		</Row>
+
+
+		<!-- Common -->
+		<Row Tag="TXT_KEY_IGE_NONE">
+			<Text>无</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ERA">
+			<Text>当前时代</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PLOT_SELECTION_PROMPT">
+			<Text>[COLOR_POSITIVE_TEXT]点击一个地块以选中。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PLOT_SELECTION_HINT">
+			<Text>[COLOR_POSITIVE_TEXT]对于改变地块较敏感的地图需要使用战略视图 (F10)。[ENDCOLOR]</Text>
+		</Row>
+
+
+		<!--IGE_Window.xml-->
+		<Row Tag="TXT_KEY_IGE_IGE">
+			<Text>IGE编辑器</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_IGE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]左键打开或关闭IGE编辑器（Ctrl + i）[ENDCOLOR][NEWLINE]右键显示设置选项。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SAFE_MODE">
+			<Text>安全模式</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SAFE_MODE_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]如果你选择其他文明势力的时候出现了游戏崩溃的情况，那么请选中本项。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SHOW_YIELDS">
+			<Text>显示地块信息</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SHOW_YIELDS_HELP">
+			<Text>打开编辑器时显示地块产出信息。[NEWLINE][COLOR_POSITIVE_TEXT]禁用本项可以提高加载速度。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SHOW_RESOURCES">
+			<Text>显示资源图标</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SHOW_RESOURCES_HELP">
+			<Text>打开编辑器时显示资源分布信息。[NEWLINE][COLOR_POSITIVE_TEXT]禁用本项可以提高加载速度。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_AUTO_SAVE">
+			<Text>自动保存游戏</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CLEAN_UP_FILES">
+			<Text>清除兀余文件</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CLEAN_UP_FILES_HELP">
+			<Text>本项允许编辑器删除所有含有相同名字的旧文件 ("IGE1"等等)。[NEWLINE][COLOR_NEGATIVE_TEXT]删除文件可能导致一些计算机崩溃 (另一个游戏错误)。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SHOW_UNKNOWN_RESOURCES">
+			<Text>隐藏未知资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SHOW_UNKNOWN_RESOURCES_HELP">
+			<Text>在你未研发特定的科技前，隐藏当前已知资源。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_AUTO_SAVE_HELP">
+			<Text>打开编辑器时自动保存游戏。[NEWLINE][COLOR_POSITIVE_TEXT]禁用本项可以提高加载速度。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CLOSE">
+			<Text>关闭</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CLOSE_BUTTON_HELP">
+			<Text>退出编辑器（ESC）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RELOAD_BUTTON_HELP">
+			<Text>保存更改并重新加载游戏（Ctrl + F5）。[NEWLINE][COLOR_NEGATIVE_TEXT]一个游戏错误可能在游戏运行时载入存档导致在一些计算机上你的游戏死机或崩溃。一些模组可能让它发生或者没有模组也可能发生。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SAVE_BUTTON_HELP">
+			<Text>快速保存（F5）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CAMERA_BUTTON_HELP">
+			<Text>调整当前视图到本文明[ICON_CAPITAL]首都附近。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_GLANCE_AT_MAP_BUTTON">
+			<Text>检视世界地图信息</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_GLANCE_AT_MAP_BUTTON_HELP">
+			<Text>检视世界地图信息。[NEWLINE]这将令玩家可以看到整个世界地图但不会触发本文明和其他文明接触或诸如此类的其他操作。地图迷雾将在关闭编辑器后恢复原样。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_COVER_MAP_BUTTON_HELP">
+			<Text>停止检视世界地图信息。</Text>
+		</Row>
+
+
+		<!--IGE_Window.lua-->
+		<Row Tag="TXT_KEY_IGE_CONFIRM_SAVE_AND_RELOAD">
+			<Text>是否确定保存当前进度并重新加载游戏？</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_LOADING_ERROR">
+			<Text>IGE无法启用，可能与其他MOD存在冲突。[NEWLINE][ICON_BULLET]请确定不兼容的MOD，并在Steam（最好是CFC）上提交下面的错误报告。我会尽快修复。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MORE_THAN_ONE_VERSION_ERROR">
+			<Text>你的硬盘上存在多个版本的IGE。[NEWLINE]这会导致混乱和错误。[NEWLINE]请删除掉旧版本。</Text>
+		</Row>
+
+
+		<!--IGE_TerrainPanel.xml-->
+		<Row Tag="TXT_KEY_IGE_PILLAGE_CB">
+			<Text>劫掠</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PILLAGE_CB_HELP">
+			<Text>地域设施是否已经被劫掠？</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_STRATEGIC_RESOURCE_QTY">
+			<Text>产量</Text>
+		</Row>
+
+
+		<!--IGE_TerrainPanel.lua-->
+		<Row Tag="TXT_KEY_IGE_UNEXPLORED_SETTING">
+			<Text>设置迷雾</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_UNEXPLORED_SETTING_HELP">
+			<Text>标记为未探索。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EXPLORED_SETTING">
+			<Text>去除迷雾</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EXPLORED_SETTING_HELP">
+			<Text>标记为已探索。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FREE_LAND_SETTING">
+			<Text>去除地块拥有势力</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FREE_LAND_SETTING_HELP">
+			<Text>设置该地块不被任何势力所拥有。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_YOUR_LAND_SETTING">
+			<Text>设置地块拥有势力</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_YOUR_LAND_SETTING_HELP">
+			<Text>设置该地块为本文明拥有。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TERRAIN">
+			<Text>地形</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FEATURES_AND_WONDERS">
+			<Text>地表和自然奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RESOURCES">
+			<Text>资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_IMPROVEMENTS">
+			<Text>地域设施</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_IGE_OTHERS">
+			<Text>其它</Text>
+		</Row>
+
+
+		<!--IGE_CitiesPanel.xml-->
+		<Row Tag="TXT_KEY_IGE_NO_UNIT_ON_PLOT">
+			<Text>[COLOR_POSITIVE_TEXT]指定地块上无任何单位。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NO_CITY_ON_PLOT">
+			<Text>[COLOR_POSITIVE_TEXT]指定地块上无任何城市。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DISBAND_UNIT_BUTTON">
+			<Text>解散单位</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_IGE_PROMOTE_UNIT_BUTTON">
+			<Text>单位获得晋升</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_HEAL_UNIT_BUTTON">
+			<Text>治疗单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CITY_POPULATION">
+			<Text>城市人口。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_HURRY_CITY_BUTTON">
+			<Text>加速生产</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_IGE_HURRY_CITY_BUTTON_HELP">
+			<Text>加速城市生产。[NEWLINE]当前正在建造的项目将在下一回合完成。</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_IGE_CAPTURE_CITY_BUTTON">
+			<Text>占领</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CAPTURE_CITY_BUTTON_HELP">
+			<Text>占领该城市。由于不存在攻击判定，因此这个操作不会导致宣战。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DISBAND_CITY_BUTTON">
+			<Text>删除</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DISBAND_CITY_BUTTON_HELP">
+			<Text>删除该城市。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_HEAL_CITY_BUTTON">
+			<Text>恢复城防</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_IGE_HEAL_CITY_BUTTON_HELP">
+			<Text>恢复该城市的城防。</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_IGE_LOVE_KING_10_BUTTON">
+			<Text>我们热爱领袖（20回合）！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_LOVE_KING_10_BUTTON_HELP">
+			<Text>触发20回合的人口增长加速。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_LOVE_KING_250_BUTTON">
+			<Text>我们热爱领袖（250回合）！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_LOVE_KING_250_BUTTON_HELP">
+			<Text>触发250回合的人口增长加速。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EXPAND_CITY_BUTTON">
+			<Text>扩张城市的文明势力范围。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EXPAND_CITY_BUTTON_HELP">
+			<Text>增加1格城市的文明势力范围扩张。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NEVER_LOST_CITY_CB">
+			<Text>本文明城市（未被攻占）</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_IGE_NEVER_LOST_CITY_CB_HELP">
+			<Text>将城市标记为本文明建立的城市并且未被其他势力攻占。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RECONQUERED_CITY_CB">
+			<Text>本文明城市（曾被攻占）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RECONQUERED_CITY_CB_HELP">
+			<Text>将城市标记为本文明建立的城市但曾一度失去后夺回。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_OCCUPIED_CITY_CB">
+			<Text>军事占领城市</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_OCCUPIED_CITY_CB_HELP">
+			<Text>将城市标记为本文明军事占领的其他势力城市，其不快乐程度将在建造法院后大幅降低。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PUPPET_CITY_CB">
+			<Text>傀儡势力城市</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_PUPPET_CITY_CB_HELP">
+			<Text>将城市标记为傀儡势力的城市，其不快乐程度将和普通城市一样。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NO_RELIGION">
+			<Text>无宗教信仰</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FOLLOWERS">
+			<Text>信仰{1_Religion}。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FOLLOWERS_MIN">
+			<Text>最小值</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FOLLOWERS_MIN_HELP">
+			<Text>完全清除{1_Religion}。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FOLLOWERS_MAX">
+			<Text>最大值</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FOLLOWERS_MAX_HELP">
+			<Text>完全转化为{1_Religion}信众。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MOVE_UNIT">
+			<Text>远程传送</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MOVE_UNIT_HELP">
+			<Text>点击按钮进入“远程传送”模式，然后右击地图设定目的地。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MOVE_UNIT_MESSAGE">
+			<Text>右击地图远程传送该单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MOVE_UNIT_CANCEL">
+			<Text>取消</Text>
+		</Row>
+
+
+
+
+		<!--IGE_PlayersPanel.xml-->
+		<Row Tag="TXT_KEY_IGE_CURRENT_FAITH">
+			<Text>当前信仰</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_CURRENT_CULTURE">
+			<Text>当前文化</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_AVAILABLE_GOLD">
+			<Text>金钱</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TAKE_SEAT_BUTTON">
+			<Text>控制该文明</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TAKE_SEAT_BUTTON_HELP">
+			<Text>使用该文明势力进行游戏。[NEWLINE][COLOR_NEGATIVE_TEXT]你无法获得全部控制能力，并且在进入下一回合前必须切换回初始控制的文明势力。另外该选项在某些计算机上可能会导致游戏崩溃！[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_REVEAL_MAP_BUTTON">
+			<Text>地图全显</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_REVEAL_MAP_BUTTON_HELP">
+			<Text>使地图全部显示，会触发外交接触和自然奇观的发现，显示所有敌方的单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EXPLORE_MAP_BUTTON">
+			<Text>探索世界</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EXPLORE_MAP_BUTTON_HELP">
+			<Text>去除地图迷雾，该操作不会导致与其他文明产生接触。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_UNEXPLORE_MAP_BUTTON">
+			<Text>地图遮蔽</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_UNEXPLORE_MAP_BUTTON_HELP">
+			<Text>使地图回复到未探索的状态。但不会撤销现有外交接触和自然奇观的发现。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_KILL_UNITS_BUTTON">
+			<Text>解散所有单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_KILL_UNITS_BUTTON_HELP">
+			<Text>消灭该文明的所有单位，你将不会被认为是一个嗜血者。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_KILL_CIV_BUTTON">
+			<Text>彻底消灭</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_KILL_CIV_BUTTON_HELP">
+			<Text>这将导致该文明被彻底消灭，你将不会被认为是一个嗜血者。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FREE_TECH_BUTTON">
+			<Text>获得免费科技</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FREE_TECH_BUTTON_HELP">
+			<Text>获得1项免费科技。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FREE_POLICY_BUTTON">
+			<Text>获得免费政策</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FREE_POLICY_BUTTON_HELP">
+			<Text>获得1项免费政策。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_GOLDEN_AGE_10_BUTTON">
+			<Text>黄金时代（10回合）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_GOLDEN_AGE_10_BUTTON_HELP">
+			<Text>获得10回合的黄金时代。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_GOLDEN_AGE_250_BUTTON">
+			<Text>黄金时代（250回合）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_GOLDEN_AGE_250_BUTTON_HELP">
+			<Text>获得250回合的黄金时代</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ALL_BUTTON">
+			<Text>应用更改</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ALL_BUTTON_HELP">
+			<Text>对游戏启用所有的有效更改。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_INVALID_BUTTON">
+			<Text>[COLOR_POSITIVE_TEXT]不存在任何有效操作！[ENDCOLOR]</Text>
+		</Row>
+		
+
+		<!--IGE_PlayersPanel.lua-->
+		<Row Tag="TXT_KEY_IGE_MEET">
+			<Text>接触其他文明</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MEET_NONE">
+			<Text>你已经接触到了所有的文明。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FORM_TEAM">
+			<Text>和其他文明组队</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FORM_TEAM_NONE">
+			<Text>每个人……都是队友？！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MAKE_PEACE">
+			<Text>和其他文明和谈</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MAKE_PEACE_NONE">
+			<Text>没有人和你处于战争状态。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SIGN_DOF">
+			<Text>和其他文明共同发表友好声明</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SIGN_DOF_NONE">
+			<Text>你已经和所有的文明共同发表了友好声明</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MAX_MINOR_INFLUENCE">
+			<Text>最大化提升对城邦影响力</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MAX_MINOR_INFLUENCE_NONE">
+			<Text>你已经对所有城邦施加了最高影响力。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FLAG_STATE_LIBERATED">
+			<Text>将城邦标记为被解放</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FLAG_STATE_LIBERATED_NONE">
+			<Text>好吧，这是一个Bug。#_#</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DENOUNCE">
+			<Text>谴责其他文明</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DENOUNCE_NONE">
+			<Text>你已经谴责了所有文明。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DENOUNCED_BY">
+			<Text>被其他文明谴责</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DENOUNCED_BY_NONE">
+			<Text>你已经被其他所有文明谴责了。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DECLARE_WAR">
+			<Text>向其他文明宣战</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_DECLARE_WAR_BY">
+			<Text>被其他文明宣战</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SET_EMBARGO">
+			<Text>设置贸易封锁</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TWO_SIDES_NONE">
+			<Text>所有文明势力不是你的队友就是你的敌人。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ALREADY_IN_TEAM_ERROR">
+			<Text>[COLOR_NEGATIVE_TEXT]该文明是你的队友。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ALREADY_UNDER_DOF_ERROR">
+			<Text>[COLOR_NEGATIVE_TEXT]该文明已经和你共同发布了友好声明。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_MAX_MINOR_INFLUENCE_ERROR">
+			<Text>[COLOR_NEGATIVE_TEXT]你对这个城邦的影响力已经达到了最大值。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SAME_TEAM_ERROR">
+			<Text>[COLOR_NEGATIVE_TEXT]你们都在同一个战队内。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ALREADY_AT_WAR_ERROR">
+			<Text>[COLOR_NEGATIVE_TEXT]你已经进入了战争状态。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ALREADY_DENOUNCED_ERROR">
+			<Text>[COLOR_NEGATIVE_TEXT]你已经对该文明进行了谴责。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ALREADY_DENOUNCED_BY_ERROR">
+			<Text>[COLOR_NEGATIVE_TEXT]该文明已经谴责了你。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NOTIFY_ALLIANCE_SHORT">
+			<Text>和{1_PlyrName}结成了同盟。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NOTIFY_ALLIANCE_LONG">
+			<Text>你和{1_PlyrName}确定了同盟关系。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NOTIFY_DOF_SHORT">
+			<Text>和{1_PlyrName}共同发布友好声明。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NOTIFY_DOF_LONG">
+			<Text>你和{1_PlyrName}共同发布了一份友好声明。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NOTIFY_EMBARGO_SHORT">
+			<Text>对{1_PlyrName}开展了贸易封锁。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NOTIFY_EMBARGO_LONG">
+			<Text>你停止了和{1_PlyrName}的贸易往来。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FOUND_PANTHEON">
+			<Text>创立神系</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FOUND_RELIGION">
+			<Text>创立宗教</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ENHANCE_RELIGION">
+			<Text>强化宗教</Text>
+		</Row>
+
+
+		<!--IGE_UnitsPanel.lua-->
+		<Row Tag="TXT_KEY_IGE_CIVILIAN_UNITS">
+			<Text>平民单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_UNITS_LEVEL">
+			<Text>新建单位等级</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RELIGIOUS_UNITS">
+			<Text>宗教单位*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RELIGIOUS_UNITS_HELP">
+			<Text>此单位需要购买，因此仅城市的现有宗教可用。还必须选择一个人类玩家。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RELIGIOUS_UNITS_WARNING">
+			<Text>[COLOR_NEGATIVE_TEXT]警告：宗教单位是通过购买获得的。如果没有城市能购买该单位则会出错，这并不会实际花费信仰，也不受单位堆叠限制，但会增加未来购买宗教单位的花费。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_RELIGIOUS_UNITS_ERROR">
+			<Text>[COLOR_ADVISOR_HIGHLIGHT_TEXT]错误：你的城市无法购买该单位。[ENDCOLOR]</Text>
+		</Row>
+
+
+		<!--IGE_API_Data.lua-->
+		<Row Tag="TXT_KEY_IGE_NO_GRAPHICAL_UPDATE">
+			<Text>[COLOR_NEGATIVE_TEXT]注意：图像不会被即时更新，除非你保存游戏并重新进入。你可以选择向Firaxis抱怨。[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SAVE_GAME_CORRUPTION">
+			<Text>[COLOR_NEGATIVE_TEXT]警告：这样做将导致存档损坏！[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_FLAT_LAND">
+			<Text>平地</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_COAST_OR_LAKE">
+			<Text>海滨</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_COAST_OR_LAKE_HELP">
+			<Text>这将创建湖泊或海滨地块。[NEWLINE]湖泊是比九个六角格更小的水区域。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_AFRICA">
+			<Text>非洲风格</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_AFRICA_HELP">
+			<Text>将地块设置为非洲风格。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_AMERICA">
+			<Text>美洲风格</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_AMERICA_HELP">
+			<Text>将地块设置为美洲风格。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ASIA">
+			<Text>亚洲风格</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_ASIA_HELP">
+			<Text>将地块设置为亚洲风格</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EUROPE">
+			<Text>欧洲风格</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_EUROPE_HELP">
+			<Text>将地块设置为欧洲风格。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NATIONAL_WONDER">
+			<Text>[COLOR_CYAN]国家级奇观建筑[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_WONDER">
+			<Text>[COLOR_CYAN]奇观建筑[ENDCOLOR]</Text>
+		</Row>
+
+		<!--IGE_TechsPanel.xml-->
+		<Row Tag="TXT_KEY_IGE_TECH_PREREQ">
+			<Text>前提科技：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TECHS_ERA_HEADER_HELP">
+			<Text>点击后提供本时代的所有科技。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TECHS_COMPATIBILITY">
+			<Text>Mod兼容性过滤：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TECHS_COMPATIBILITY_NONE">
+			<Text>没有</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TECHS_COMPATIBILITY_STANDARD">
+			<Text>标准</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_TECHS_COMPATIBILITY_NIGHTS">
+			<Text>Civilization Nights</Text>
+		</Row>
+
+
+		<!--IGE_API_Misc.lua -->
+		<Row Tag="TXT_KEY_IGE_YIELD_CHANGE_TEMPLATE">
+			<Text>{1_Amount} 来自 {2_Cause}。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_NO_YIELD_CHANGE_TEMPLATE">
+			<Text>需要建造 {1_Cause}。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IGE_SAVED_AS">
+			<Text>游戏保存为 “{1_FileName}”。</Text>
+		</Row>
+	</Language_zh_CN>
+</GameData>
