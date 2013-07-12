@@ -26,6 +26,7 @@ LuaEvents.IGE_PingAllVersions.Add(OnPingAllVersions);
 function OnInitialize()
 	print("IGE_Initialize");
 	print("IGE:Gods and kings="..getstr(IGE_HasGodsAndKings));
+	print("IGE:Brave new world="..getstr(IGE_HasBraveNewWorld));
 end
 LuaEvents.IGE_Initialize.Add(OnInitialize);
 
