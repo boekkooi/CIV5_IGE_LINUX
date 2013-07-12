@@ -273,7 +273,7 @@ GetHelpTextForBuilding = GetHelpTextForBuilding or function(iBuildingID, bExclud
 	
 	-- Culture
 	local iCulture;
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		iCulture = Game.GetBuildingYieldChange(iBuildingID, YieldTypes.YIELD_CULTURE); -- G&K
 	else
 		iCulture = pBuildingInfo.Culture;
@@ -346,7 +346,7 @@ GetHelpTextForBuilding = GetHelpTextForBuilding or function(iBuildingID, bExclud
 	end
 	
 	-- Faith
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		local iFaith = Game.GetBuildingYieldChange(iBuildingID, YieldTypes.YIELD_FAITH); -- G&K
 		if (iFaith ~= nil and iFaith ~= 0) then
 			strHelpText = strHelpText .. "[NEWLINE]";
@@ -525,7 +525,7 @@ GetCultureTooltip = GetCultureTooltip or function(pCity)
 	
 	-- Culture from Terrain
 	local iCultureFromTerrain = 0;
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		iCultureFromTerrain = pCity:GetBaseYieldRateFromTerrain(YieldTypes.YIELD_CULTURE);
 	else
 		iCultureFromTerrain = pCity:GetJONSCulturePerTurnFromTerrain();

@@ -25,7 +25,7 @@ LuaEvents.IGE_SharingGlobalAndOptions.Add(OnSharingGlobalAndOptions);
 function OnInitialize()
 	SetPlayersData(data, {});
 
-	if not IGE_IsGodsAndKings then
+	if not IGE_HasGodsAndKings then
 		Controls.FoundPantheonButton:SetHide(true);
 		Controls.FoundReligionButton:SetHide(true);
 		Controls.FaithContainer:SetHide(true);
@@ -86,7 +86,7 @@ UpdateCulture = HookNumericBox("Culture",
 	function(amount) Players[IGE.currentPlayerID]:SetJONSCulture(amount) end, 
 	0, nil, 100);
 
-if IGE_IsGodsAndKings then
+if IGE_HasGodsAndKings then
 	UpdateFaith = HookNumericBox("Faith", 
 		function() return Players[IGE.currentPlayerID]:GetFaith() end, 
 		function(amount) Players[IGE.currentPlayerID]:SetFaith(amount) end, 
@@ -140,7 +140,7 @@ function OnUpdate()
 	local pPlayer = IGE.currentPlayer;
 	UpdateGold(pPlayer:GetGold());
 	UpdateCulture(pPlayer:GetJONSCulture());
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		UpdateFaith(pPlayer:GetFaith());
 
 		-- Count beliefs to detect religion enhancement

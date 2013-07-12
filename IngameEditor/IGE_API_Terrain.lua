@@ -87,7 +87,7 @@ local function UpdateOwnership(plot)
 	if owner ~= nil then
 		local city = plot:GetWorkingCity();
 
-		if city then
+		if city and city:Plot() ~= plot then
 			UpdateOwnershipForCityPlot(owner, city, plot);
 		else
 			plot:SetOwner(-1);

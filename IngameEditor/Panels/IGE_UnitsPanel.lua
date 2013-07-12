@@ -51,7 +51,7 @@ function OnInitialize()
 		civilianGroupInstance.Header:SetText(L("TXT_KEY_IGE_CIVILIAN_UNITS"));
 	end
 
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		religiousGroupInstance = eraItemManager:GetInstance();
 		if religiousGroupInstance then
 			religiousUnitManager = CreateInstanceManager("ListItemInstance", "Button", religiousGroupInstance.List );
@@ -283,7 +283,7 @@ function OnUpdate()
 	UpdateLevel(currentLevel);
 
 	-- Religious units
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		local validReligions = {};
 		if IGE.currentPlayer:IsHuman() then
 			for pCity in IGE.humanPlayer:Cities() do

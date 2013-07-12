@@ -116,7 +116,7 @@ g_NameTable[ NotificationTypes.NOTIFICATION_FREE_GREAT_PERSON ]	 = "FreeGreatPer
 g_NameTable[ NotificationTypes.NOTIFICATION_DENUNCIATION_EXPIRED ]	= "Diplomacy";
 g_NameTable[ NotificationTypes.NOTIFICATION_FRIENDSHIP_EXPIRED ] = "Diplomacy";
 
-if IGE_IsGodsAndKings then
+if IGE_HasGodsAndKings then
 	g_NameTable[ NotificationTypes.NOTIFICATION_FOUND_PANTHEON] = "FoundPantheon";
 	g_NameTable[ NotificationTypes.NOTIFICATION_FOUND_RELIGION] = "FoundReligion";
 	g_NameTable[ NotificationTypes.NOTIFICATION_PANTHEON_FOUNDED_ACTIVE_PLAYER ] = "PantheonFounded";
@@ -451,7 +451,7 @@ end
 -- IGE HOOKS
 --===============================================================================================
 local function OnShowing()
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		Controls.FoundPantheonIGEImage:SetTexture("Assets/DLC/Expansion/UI/Art/Notification/NotificationIconsFreePantheon.dds");
 		Controls.FoundPantheonIGEImageAlpha:SetTexture("Assets/DLC/Expansion/UI/Art/Notification/NotificationIconsFreePantheonGlow2.dds");
 

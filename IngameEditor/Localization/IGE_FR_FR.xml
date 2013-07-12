@@ -526,7 +526,7 @@
 			<Text>Unités religieuses*</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IGE_RELIGIOUS_UNITS_HELP">
-			<Text>Ces unités doivent être achetées, donc seules les religions disponibles dans vos villes sont proposées. Une civilisation/joueur humain doit par ailleurs être sélectionné.</Text>
+			<Text>Ces unités doivent être achetées, donc seules les religions disponibles dans vos villes sont proposées. Une civilisation/joueur humain doit par ailleurs être sélectionnée.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IGE_RELIGIOUS_UNITS_WARNING">
 			<Text>[COLOR_NEGATIVE_TEXT]ATTENTION: Les unités sont en fait "achetées" (gratuitement). Le procédé peut échouer si aucune ville ne peut faire l'achat mais le coût en foi est ignoré ainsi que la règle d'une unité par case.[ENDCOLOR]</Text>

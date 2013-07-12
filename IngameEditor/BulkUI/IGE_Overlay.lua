@@ -325,7 +325,7 @@ local function UpdateYieldOverlay(plot, index, x, y)
 	AppendYieldIcon(1, plot:CalculateYield(1, true), plotInstance.Stack, plotInstance.images);
 	AppendYieldIcon(2, plot:CalculateYield(2, true), plotInstance.Stack, plotInstance.images);
 	AppendYieldIcon(3, plot:CalculateYield(3, true), plotInstance.Stack, plotInstance.images);
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		AppendYieldIcon(4, plot:CalculateYield(4, true), plotInstance.CultureContainer, plotInstance.images);
 		AppendYieldIcon(5, plot:CalculateYield(5, true), plotInstance.CultureContainer, plotInstance.images);
 	else

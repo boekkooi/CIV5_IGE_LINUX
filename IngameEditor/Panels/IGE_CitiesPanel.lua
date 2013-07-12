@@ -247,7 +247,7 @@ local function UpdateCityUI()
 		end
 	end	
 
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		local playerReligionID = IGE.currentPlayer:GetReligionCreatedByPlayer();
 		local cityReligionID = currentCity:GetReligiousMajority();
 		UpdateConversionList(cityReligionID, playerReligionID)

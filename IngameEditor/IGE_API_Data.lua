@@ -311,7 +311,7 @@ function SetFeaturesData(data, options)
 		for row in GameInfo.Feature_YieldChanges(item.condition) do
 			item.yields[row.YieldType] = row.Yield;
 		end
-		if (not IGE_IsGodsAndKings) and row.Culture then
+		if (not IGE_HasGodsAndKings) and row.Culture then
 			item.yields.YIELD_CULTURE = row.Culture;
 		end
 		item.subtitle = GetYieldString(item);
@@ -482,15 +482,20 @@ function SetResourcesData(data, options)
 		item.help = GetYieldChangeString(item);
 		AppendIDAndTypeToHelp(item)
 
+		-- Warnings
+		local valid = item.type ~= "RESOURCE_ARTIFACTS" and item.type ~= "RESOURCE_HIDDEN_ARTIFACTS"
+
 		-- Append to tables
-		data.allResources[item.ID] = item;
-		data.resourcesByTypes[item.type] = item;
-		if item.usage == ResourceUsageTypes.RESOURCEUSAGE_BONUS then
-			table.insert(data.bonusResources, item);
-		elseif item.usage == ResourceUsageTypes.RESOURCEUSAGE_STRATEGIC then
-			table.insert(data.strategicResources, item);
-		else
-			table.insert(data.luxuryResources, item);
+		if valid then 
+			data.allResources[item.ID] = item;
+			data.resourcesByTypes[item.type] = item;
+			if item.usage == ResourceUsageTypes.RESOURCEUSAGE_BONUS then
+				table.insert(data.bonusResources, item);
+			elseif item.usage == ResourceUsageTypes.RESOURCEUSAGE_STRATEGIC then
+				table.insert(data.strategicResources, item);
+			else
+				table.insert(data.luxuryResources, item);
+			end
 		end
 	end
 
@@ -554,7 +559,7 @@ function SetImprovementsData(data, options)
 		for subRow in GameInfo.Improvement_Yields(item.condition) do
 			item.yields[subRow.YieldType] = subRow.Yield;
 		end
-		if (not IGE_IsGodsAndKings) and row.Culture then
+		if (not IGE_HasGodsAndKings) and row.Culture then
 			item.yields.YIELD_CULTURE = row.Culture;
 		end
 
@@ -960,6 +965,9 @@ function SetUnitsData(data)
 			end
 		end]]
 
+		-- Special hack for Reseed
+		if item.type == "RSD_BEACON" then valid = false end
+
 		-- Insert into tables
 		if valid then
 			table.insert(item.era.units, item);
@@ -1217,7 +1225,7 @@ end
 
 -------------------------------------------------------------------------------------------------
 function SetReligionsData(data)
-	if not IGE_IsGodsAndKings then return end
+	if not IGE_HasGodsAndKings then return end
 	if data.religions then return end
 	data.religions = {};
 	data.religionsByID = {};

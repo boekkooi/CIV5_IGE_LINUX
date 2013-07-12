@@ -238,7 +238,7 @@ local function UpdateCityBanner(city)
 	instance.CityName:SetText(convertedKey);
 
 	-- Update religion
-	if IGE_IsGodsAndKings then
+	if IGE_HasGodsAndKings then
 		local eReligion = city:GetReligiousMajority();
 		
 		instance.ReligiousIcon:SetTexture("assets/DLC/Expansion/UI/Art/Icons/ReligiousSymbolsWhite32_Expansion.dds");

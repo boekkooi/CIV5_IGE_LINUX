@@ -224,6 +224,8 @@ function UpdateHierarchizedList(items, itemManager, clickHandler, rightClickHand
 	-- Collect default units
 	local defaultItemsByClass = {}
 	for _, item in ipairs(items) do
+		item.enabled = (not item.civilizationType) or item.civilizationType == currentCivType
+
 		-- This is our civ-specific unit
 		if item.civilizationType and item.civilizationType == currentCivType then
 			defaultItemsByClass[item.class] = item;
@@ -239,7 +241,7 @@ function UpdateHierarchizedList(items, itemManager, clickHandler, rightClickHand
 		local defaultItem = defaultItemsByClass[item.class];
 		item.isDefault = (defaultItem == item) or (defaultItem and item and (defaultItem.type == item.type));
 		item.label = item.isDefault and item.label or "   "..item.label;
-		item.enabled = item.enabled and item.isDefault;
+		--item.enabled = item.enabled and item.isDefault;
 	end
 
 	-- Gather disabled units in alpha order

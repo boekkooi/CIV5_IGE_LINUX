@@ -1,9 +1,14 @@
 -- Released under GPL v3
 --------------------------------------------------------------
-if Map.GetPlot(0,0).GetCulture then
-	IGE_IsGodsAndKings = false;
+if Map.GetPlot(0,0).GetCulture then	--Removed in G&K
+	IGE_HasGodsAndKings = false;
 else
-	IGE_IsGodsAndKings = true;
+	IGE_HasGodsAndKings = true;
+end
+if Map.GetPlot(0,0).GetArchaeologyArtifactEra then -- Added in BNW
+	IGE_HasBraveNewWorld = true;
+else
+	IGE_HasBraveNewWorld = false;
 end
 
 -------------------------------------------------------------------------------------------------
