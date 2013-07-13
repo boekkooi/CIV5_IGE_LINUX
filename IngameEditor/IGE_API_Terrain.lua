@@ -462,6 +462,7 @@ end
 function SetResource(resource, plot)
 	if plot and (plot:GetResourceType() ~= resource.ID or plot:GetNumResource() ~= resource.qty) then
 		plot:SetResourceType(resource.ID, resource.qty);
+		plot:SetNumResource(resource.qty);
 		return true, true
 	end
 end

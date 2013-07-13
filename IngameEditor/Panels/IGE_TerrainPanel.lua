@@ -29,7 +29,6 @@ local editData = {};
 local paintData = {};
 local currentPlot = nil;
 local editSound = "AS2D_BUILD_UNIT";
-local currentStrategicResAmountInPaintMode = 4;
 local selectedStrategicResource = nil;
 local clickHandler = nil;
 local isEditing = true;
@@ -474,25 +473,19 @@ LuaEvents.IGE_ResizedReseedElement.Add(OnResizedReseedElement)
 -- CONTROLS EVENTS
 --===============================================================================================
 function GetResourceAmount()
-	if isEditing then
-		return selectedStrategicResource and selectedStrategicResource.qty or 1;
-	else
-		return currentStrategicResAmountInPaintMode;
-	end
+	return selectedStrategicResource and selectedStrategicResource.qty or 1;
 end
 
 -------------------------------------------------------------------------------------------------
 function SetResourceAmount(amount, userInteraction)
 	if selectedStrategicResource then
-		if isEditing then
-			selectedStrategicResource.qty = amount;
+		selectedStrategicResource.qty = amount;
 
+		if isEditing then
 			if currentPlot and userInteraction then
 				BeginUndoGroup();
 				DoAction(currentPlot, SetResourceQty, amount, false);
 			end
-		else
-			currentStrategicResAmountInPaintMode = amount;
 		end
 	end
 end
