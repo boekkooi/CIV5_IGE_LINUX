@@ -540,21 +540,29 @@ Controls.HurryCityButton:RegisterCallback(Mouse.eLClick, OnHurryProductionCityCl
 
 -------------------------------------------------------------------------------------------------
 function OnExpandBordersCityClick()
+	local playerTeamID = IGE.currentPlayer:GetTeam()
+
+	-- Store revealed plots
+	local revealed = {}
+	for i = 0, Map.GetNumPlots()-1, 1 do
+		local plot = Map.GetPlotByIndex(i)
+		revealed[i] = plot:IsRevealed(playerTeamID, false)
+	end
+
+	-- Expand borders
 	currentCity:DoJONSCultureLevelIncrease();
 
-	-- Update fog
-	local playerTeamID = IGE.currentPlayer:GetTeam();
-
-	-- Reveal plots owned but hidden
+	-- Update fog on plots that have just been revealed
 	for i = 0, Map.GetNumPlots()-1, 1 do
 		local plot = Map.GetPlotByIndex(i);
-		if plot:IsRevealed(playerTeamID, false) then
+		if plot:IsRevealed(playerTeamID, false) ~= revealed[i] then
 			plot:UpdateFog();
 			local hexpos = ToHexFromGrid(Vector2(plot:GetX(), plot:GetY()));
 			Events.HexFOWStateChanged(hexpos, true, false);
 		end
 	end
 
+	-- Invalidate UI for the city
 	InvalidateCity();
 end
 Controls.ExpandCityButton:RegisterCallback(Mouse.eLClick, OnExpandBordersCityClick);
@@ -591,10 +599,11 @@ Controls.LoveKingCity250Button:RegisterCallback(Mouse.eLClick, OnLoveKingCity250
 
 -------------------------------------------------------------------------------------------------
 function OnPuppetCityCBChanged()
-	currentCity:SetNeverLost(false);
-	currentCity:SetOccupied(true);
-	currentCity:SetPuppet(true);
-	InvalidateCity();
+	currentCity:SetNeverLost(false)
+	currentCity:SetOccupied(true)
+	currentCity:SetPuppet(true)
+	currentCity:SetProductionAutomated(true)
+	InvalidateCity()
 end
 Controls.PuppetCityCB:RegisterCallback(Mouse.eLClick, OnPuppetCityCBChanged);
 
