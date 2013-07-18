@@ -224,7 +224,8 @@ function UpdateHierarchizedList(items, itemManager, clickHandler, rightClickHand
 	-- Collect default units
 	local defaultItemsByClass = {}
 	for _, item in ipairs(items) do
-		item.enabled = (not item.civilizationType) or item.civilizationType == currentCivType
+		local availableForThisCiv = (not item.civilizationType) or item.civilizationType == currentCivType
+		item.enabled = item.enabled and availableForThisCiv
 
 		-- This is our civ-specific unit
 		if item.civilizationType and item.civilizationType == currentCivType then
