@@ -327,6 +327,9 @@
 		<Row Tag="TXT_KEY_IGE_MOVE_UNIT_CANCEL">
 			<Text>Cancel</Text>
 		</Row>
+		<Row Tag="TXT_KEY_IGE_INTELLIGENCE_AGENCY_WARNING">
+			<Text>[COLOR_NEGATIVE_TEXT]Do not add this building multiple times to acquire more spies than possible! This would result in game corruption.[ENDCOLOR]</Text>
+		</Row>
 		
 
 

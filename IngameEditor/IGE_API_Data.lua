@@ -1023,6 +1023,11 @@ function SetBuildingsData(data)
 			item.subtitle = "";
 		end
 
+		-- WARNING
+		if item.type == "BUILDING_INTELLIGENCE_AGENCY" then
+			item.note = L("TXT_KEY_IGE_INTELLIGENCE_AGENCY_WARNING")
+		end
+
 		-- Texture
 		item.textureOffset, item.texture = IconLookup(row.PortraitIndex, largeSize, row.IconAtlas);
 		item.smallTextureOffset, item.smallTexture = IconLookup(row.PortraitIndex, smallSize, row.IconAtlas );
