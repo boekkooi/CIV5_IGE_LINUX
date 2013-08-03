@@ -327,6 +327,9 @@
 		<Row Tag="TXT_KEY_IGE_MOVE_UNIT_CANCEL">
 			<Text>Cancella</Text>
 		</Row>
+		<Row Tag="TXT_KEY_IGE_INTELLIGENCE_AGENCY_WARNING">
+			<Text>[COLOR_NEGATIVE_TEXT]Non aggiungete questo edificio più di una volta in modo da acquisire più spie del possibile! Corrompereste la partita[ENDCOLOR]</Text>
+		</Row>
 
 
 
