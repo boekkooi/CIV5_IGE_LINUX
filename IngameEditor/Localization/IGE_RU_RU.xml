@@ -328,6 +328,9 @@
 		<Row Tag="TXT_KEY_IGE_MOVE_UNIT_CANCEL">
 			<Text>Отменить</Text>
 		</Row>
+		<Row Tag="TXT_KEY_IGE_INTELLIGENCE_AGENCY_WARNING">
+			<Text>[COLOR_NEGATIVE_TEXT]Не добавляйте это здание несколько раз в целях получить больше шпионов, чем возможно! Это может привести к крашу игры (серьёзному).[ENDCOLOR]</Text>
+		</Row>
 		
 
 
