@@ -375,6 +375,11 @@ function SetTerrain(terrain, plot)
 			plot:SetTerrainType(terrain.ID);
 			CheckConsistency(plot)
 			plot:SetArea(-1)
+
+			local art = plot:GetContinentArtType()
+			if (not art) or (art < 1) then
+				plot:SetContinentArtType(1)
+			end
 			return true, true;
 		end
 	end
@@ -559,6 +564,7 @@ function BackupPlot(plot)
 	backup.pillaged = plot:IsImprovementPillaged();
 	backup.route = plot:GetRouteType();
 	backup.owner = plot:GetOwner();
+	backup.art = plot:GetContinentArtType();
 	backup.revealed = plot:IsRevealed(team);
 
 	backup.rivers = {};
@@ -583,6 +589,7 @@ function RestorePlot(backup)
 	plot:SetNumResource(backup.resourceQty);
 	plot:SetImprovementType(backup.improvement);
 	plot:SetImprovementPillaged(backup.pillaged);
+	plot:SetContinentArtType(backup.art);
 	plot:SetRouteType(backup.route);
 	CheckConsistency(plot)
 
