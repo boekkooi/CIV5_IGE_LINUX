@@ -188,6 +188,9 @@ function UpdateConversionList(cityReligionID, playerReligionID)
 	end
 
 	-- Update instances
+	local isHolyCity = currentCity:IsHolyCityAnyReligion()
+	Controls.HolyCityWarning:SetHide(not isHolyCity)
+
 	conversionsManager:ResetInstances();
 	for _, v in ipairs(data.religions) do
 		if foundedReligions[v.ID] then
@@ -301,6 +304,7 @@ LuaEvents.IGE_Update.Add(OnUpdate);
 -- INPUTS
 --===============================================================================================
 function PrintReligionState(state)
+	print("dumping religions:")
 	local str = "";
 	for i,v in pairs(state) do
 		if (str ~= "")  then str = str..", " end
@@ -311,40 +315,42 @@ end
 
 -------------------------------------------------------------------------------------------------
 function SetReligionState(state)
-	--PrintReligionState(state);
+	PrintReligionState(state);
 
 	-- What is the majority?
 	local maxFollowers = -1;
 	local majority = -1;
 	for i in pairs(state) do
-		state[i] = math.floor(state[i] + 0.5);
+		state[i] = math.floor(state[i] + 0.5)
 		if state[i] > maxFollowers then
 			majority = i;
-			maxFollowers = state[i];
+			maxFollowers = state[i]
 		end
 	end
 
 	-- EDIT: Those crashes may actually have only been caused by tests with a religion not founded yet. Doesn't matter, leave the code like that
 	-- ConvertPercentFollowers is full of nasty bugs (can only convert from majority to minority) hence this twisted method
 	currentCity:AdoptReligionFully(majority);
+	print("Done fully adopting")
+
 	for i, v in pairs(state) do
 		if i ~= majority and i >= 0 then
 			-- Convert 1% at a time because followers are internally stored as real numbers.
 			while (currentCity:GetNumFollowers(i) + 0.5) < v do
-				currentCity:ConvertPercentFollowers(i, majority, 1);
+				currentCity:ConvertPercentFollowers(i, majority, 1)
 			end
 		end
 	end
-	print("Done increasing minorities.");
+	print("Done increasing minorities.")
 
 	-- We do atheists in the end because of a rounding error in civ5 (sum of followers can be population + 1)
 	-- Since they're never displayed, we actually use the majority as a loop condition.
 	if majority >= 0 then
 		while (currentCity:GetNumFollowers(majority) - 0.5) > state[majority] do
-			currentCity:ConvertPercentFollowers(-1, majority, 1);	
+			currentCity:ConvertPercentFollowers(-1, majority, 1)
 		end
 	end
-	print("Done lowering majority.");
+	print("Done lowering majority.")
 end
 
 -------------------------------------------------------------------------------------------------

@@ -300,6 +300,9 @@
 		<Row Tag="TXT_KEY_IGE_NO_RELIGION">
 			<Text>No religion</Text>
 		</Row>
+		<Row Tag="TXT_KEY_IGE_HOLY_CITY_BUG">
+			<Text>[COLOR_NEGATIVE_TEXT]May remove the holy city status.[ENDCOLOR]</Text>
+		</Row>
 		<Row Tag="TXT_KEY_IGE_FOLLOWERS">
 			<Text>Followers of {1_Religion}.</Text>
 		</Row>

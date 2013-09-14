@@ -160,7 +160,8 @@
 						</Stack>
 
 						<Stack ID="ReligionStack" Anchor="L,T" Size="180,390" Offset="20,0" StackGrowth="Bottom">
-							<Label ID="ReligionHeader" Offset="0,0" String="Buddhism" Font="TwCenMT16"/>
+							<Label ID="ReligionHeader" Offset="0,0" Font="TwCenMT16" String="Buddhism"/>
+							<Label ID="HolyCityWarning" Offset="0,5" Font="TwCenMT14" String="TXT_KEY_IGE_HOLY_CITY_BUG" />
 							<Stack ID="ConversionStack" Anchor="L,T" Offset="-5,10" Size="160,full" StackGrowth="Bottom"/>
 						</Stack>
 
