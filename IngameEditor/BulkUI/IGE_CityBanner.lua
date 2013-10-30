@@ -203,7 +203,11 @@ local function UpdateCityBanner(city)
 	end
 	
 	-- Get colors
-	local primaryColor, secondaryColor = owner:GetPlayerColors();
+	local success, primaryColor, secondaryColor = pcall(owner.GetPlayerColors, owner);
+	if not success then
+		primaryColor = {x = 0, y = 0, z = 0, w = 0.7};
+		secondaryColor = {x = 1, y = 1, z = 1, w = 0.7};
+	end
 	if owner:IsMinorCiv() then
 		primaryColor, secondaryColor = secondaryColor, primaryColor;
 	end
