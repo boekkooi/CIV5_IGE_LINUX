@@ -5,7 +5,7 @@
     <ProjectGuid>{02308840-13bc-44e8-9017-17a53bef4c56}</ProjectGuid>
     <Name>Ingame Editor</Name>
     <Guid>170c8ed1-b516-4fe2-b571-befeac39d220</Guid>
-    <ModVersion>38</ModVersion>
+    <ModVersion>39</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>[COLOR_GREEN]Change terrain, units, cities, ...[ENDCOLOR]</Teaser>
     <Description>[ICON_CAPITAL] IGE [ICON_CAPITAL][NEWLINE]
@@ -25,7 +25,8 @@ http://forums.civfanatics.com/showthread.php?t=436912
 [ICON_BULLET]German: al Qamar[NEWLINE]
 [ICON_BULLET]Spanish: Emerald Viper[NEWLINE]
 [ICON_BULLET]Italian: Error404[NEWLINE]
-[ICON_BULLET]Russian: Zodiak69[NEWLINE]</Description>
+[ICON_BULLET]Russian: Zodiak69[NEWLINE]
+[ICON_BULLET]Japanese: CJ_GOROH[NEWLINE]</Description>
     <Authors>DonQuiche</Authors>
     <SpecialThanks>CivFanatics, the folks lurking there, Ne Ko Chan and the translators</SpecialThanks>
     <Categories>$Categories$</Categories>
@@ -71,6 +72,11 @@ http://forums.civfanatics.com/showthread.php?t=436912
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Localization/IGE_RU_RU.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Localization/IGE_JA_JP.xml</FileName>
       </Action>
     </ModActions>
     <ModContent>
@@ -370,6 +376,10 @@ http://forums.civfanatics.com/showthread.php?t=436912
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Localization\IGE_IT_IT.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Localization\IGE_JA_JP.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
