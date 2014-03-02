@@ -5,7 +5,7 @@
     <ProjectGuid>{02308840-13bc-44e8-9017-17a53bef4c56}</ProjectGuid>
     <Name>Ingame Editor</Name>
     <Guid>170c8ed1-b516-4fe2-b571-befeac39d220</Guid>
-    <ModVersion>39</ModVersion>
+    <ModVersion>40</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>[COLOR_GREEN]Change terrain, units, cities, ...[ENDCOLOR]</Teaser>
     <Description>[ICON_CAPITAL] IGE [ICON_CAPITAL][NEWLINE]

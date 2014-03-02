@@ -348,10 +348,10 @@
 			<Text>利用可能なゴールド。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IGE_TAKE_SEAT_BUTTON">
-			<Text>指導者を休ませる</Text>
+			<Text>この指導者を操る</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IGE_TAKE_SEAT_BUTTON_HELP">
-			<Text>この文明としてプレー。[NEWLINE][COLOR_NEGATIVE_TEXT]あなたが完全に制御する必要はありませんが、ターンを終了する前に元の文明に戻す必要があります。さらにこの機能は、一部のコンピューターでゲームをクラッシュさせる事があります！</Text>
+			<Text>この文明としてプレー。[NEWLINE][COLOR_NEGATIVE_TEXT]あなたが完全に制御する必要はありませんが、ターンを終了する前に元の指導者に戻す必要があります。さらにこの機能は、一部のコンピューターでゲームをクラッシュさせる事があります！</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IGE_REVEAL_MAP_BUTTON">
 			<Text>マップ全体を可視化</Text>
