@@ -496,18 +496,15 @@ function SetResourcesData(data, options)
 			else
 				table.insert(data.luxuryResources, item);
 			end
+			
+			if item.type == "RESOURCE_IRON" then item.baseQty = 4
+			elseif item.type == "RESOURCE_HORSE" then item.baseQty = 4
+			elseif item.type == "RESOURCE_COAL" then item.baseQty = 6
+			elseif item.type == "RESOURCE_OIL" then item.baseQty = 6
+			elseif item.type == "RESOURCE_ALUMINIUM" then item.baseQty = 8
+			elseif item.type == "RESOURCE_URANIUM" then item.baseQty = 8
+			end
 		end
-	end
-
-	-- Add missing resources data
-	data.allResources[0].baseQty = 4;		-- Iron
-	data.allResources[1].baseQty = 4;		-- Horses
-	data.allResources[2].baseQty = 6;		-- Coal
-	data.allResources[3].baseQty = 6;		-- Oil
-	data.allResources[4].baseQty = 8;		-- Aluminium
-	data.allResources[5].baseQty = 8;		-- Uranium
-	for k, v in pairs(data.allResources) do 
-		data.allResources[k].qty = data.allResources[k].baseQty; 
 	end
 
 	-- Sort
@@ -520,6 +517,7 @@ function SetResourcesData(data, options)
 		data.allResources[-1] = data.bonusResources[1];
 	end
 end
+
 
 --===============================================================================================
 -- Improvements & routes
