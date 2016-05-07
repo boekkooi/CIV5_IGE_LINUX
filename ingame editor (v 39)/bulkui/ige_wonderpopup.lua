@@ -1,7 +1,7 @@
 include("IGE_Utils");
 include("IconSupport");
-include("InfoTooltipInclude");
-include("IGE_InfoToolTipInclude")
+include("tooltip");
+include("ige_tooltip")
 
 local m_fAnimSeconds = 5;
 local m_fScaleFactor = 0.5;

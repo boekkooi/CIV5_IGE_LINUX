@@ -3,8 +3,8 @@
 include("IGE_Utils");
 include("IconSupport");
 include("InstanceManager");
-include("InfoTooltipInclude");
-include("IGE_InfoToolTipInclude")
+include("tooltip");
+include("ige_tooltip")
 print("loaded");
 
 local cityManager = InstanceManager:new("CityBanner",  "Anchor", Controls.CityBanners);

@@ -96,7 +96,7 @@ http://forums.civfanatics.com/showthread.php?t=436912
     <File md5="3A2442A00874833DDDB7EF136D0B9CB1" import="1">IGE_Controller_All.xml</File>
     <File md5="0F3D15FD03FF456964D91DBD5F9FCED8" import="1">IGE_Controller_Fog.lua</File>
     <File md5="5546BD6748DFC7CBD59F6239D90CDB57" import="1">IGE_Controller_All.lua</File>
-    <File md5="9EFA395686FB9580A886A1D0193F42C0" import="1">IGE_InfoToolTipInclude.lua</File>
+    <File md5="9EFA395686FB9580A886A1D0193F42C0" import="1">ige_tooltip.lua</File>
     <File md5="F5124E2E1D69912D158F93759556E371" import="1">IGE_Loader.lua</File>
     <File md5="28A52DB9C98E03AAA9609E1478EC8D45" import="1">IGE_Loader.xml</File>
     <File md5="71E11EB0B5E5784B7F6C0AB2B40F0C1C" import="1">IGE_Utils.lua</File>

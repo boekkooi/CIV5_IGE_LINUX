@@ -6,8 +6,8 @@
 include("IGE_Utils");
 include("IconSupport");
 include("InstanceManager");
-include("InfoTooltipInclude");
-include("IGE_InfoToolTipInclude")
+include("tooltip");
+include("ige_tooltip")
 
 local g_UnitInstanceManager = InstanceManager:new( "ProdButton", "Button", Controls.UnitButtonStack );
 local g_BuildingInstanceManager = InstanceManager:new( "ProdButton", "Button", Controls.BuildingButtonStack );
